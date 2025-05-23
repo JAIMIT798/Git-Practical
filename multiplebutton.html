@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.button {
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button2 {background-color: #008CBA;} 
+.button3 {background-color: #f44336;} 
+.button4 {background-color: #e7e7e7; color: black;} 
+.button5 {background-color: #555555;} 
+</style>
+<script>
+function buttonClicked(color) {
+  alert("You clicked the " + color + " button!");
+}
+</script>
+</head>
+<body>
+
+<h2>Button Colors</h2>
+<p>Click a button to see an alert:</p>
+
+<button class="button" onclick="buttonClicked('Green')">Green</button>
+<button class="button button2" onclick="buttonClicked('Blue')">Blue</button>
+<button class="button button3" onclick="buttonClicked('Red')">Red</button>
+<button class="button button4" onclick="buttonClicked('Gray')">Gray</button>
+<button class="button button5" onclick="buttonClicked('Black')">Black</button>
+
+</body>
+</html>

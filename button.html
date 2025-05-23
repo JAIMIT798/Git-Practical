@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #037f57;
+}
+</style>
+<script>
+function handleClick(buttonName) {
+  alert(buttonName + ' was clicked!');
+}
+</script>
+</head>
+<body>
+
+<h2>CSS Buttons with Click Events</h2>
+
+<button onclick="handleClick('Default Button')">Default Button</button>
+<a href="#" class="button" onclick="handleClick('Link Button')">Link Button</a>
+<button class="button" onclick="handleClick('Styled Button')">Button</button>
+<input type="button" class="button" value="Input Button" onclick="handleClick('Input Button')">
+
+</body>
+</html>
